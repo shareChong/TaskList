@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonUtils {
     /**
-     * 序列化成json
+     * 序列化成json,测试
      * */
     public static String toJson(Object obj) {
         // 对象映射器
