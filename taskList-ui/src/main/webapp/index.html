@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务列表</title>
+</head>
+<body>
+
+<h2>任务列表</h2>
+
+<ol id="items">
+
+</ol>
+<script>
+    $.get("TaskServlet",function (data) {
+       alert(data.data);
+    });
+$.get("TaskServlet",function (data) {
+    $.each(data.data,function (index,obj) {
+        $("<li/>").html(obj.title).appendTo("#items");
+        
+    })
+});
+</script>
+</body>
+</html>
